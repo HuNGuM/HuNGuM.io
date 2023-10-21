@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding: 31px 0;
+    background-color: #e1ede6;
+}
+
+.container {
+    max-width: 1140px;
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.left{
+    display: block;
+}
+
+.header-right { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -5em;
+}
+
+.header-right div {
+    margin-right: 5em;
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.nav-item a{
+    color: #2C2D35;
+    transition: color 0.3s;
+}
+.change-bc{
+    transition: background-color 0.3s;
+}
+.change-bc:active{
+    background-color: #d4e8d9;
+}
+.nav-item a:hover{
+    color: #598D66;
+}
+.nav{
+    display: block;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin-right: 60px;
+}
+
+@media (max-width: 701px){
+    .header{
+        padding: 16px 0;
+    }
+    .container {
+        max-width: 702px;
+    padding: 0px 15px;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+    padding: 0 33px;
+    
+    }
+    .header-left{
+        margin-bottom: 10px;
+    text-align: center;
+    }
+    .header-right {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #c3d1c6;
+        padding-top: 16px;
+        width: 100%;
+    }
+    .nav-item {
+        margin-right: 30px;
+    }
+    /* .nav-item:not(:last-child) {
+        margin-right: 63px;
+    } */
+}
+.hero{
+    padding-bottom: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+}
+.hero-image {
+    grid-column: span 6 ;
+}
+.hero-content {
+    padding-top: 145px;
+    grid-column: span 6;
+    height: 500px;
+    /* width: 540px; */
+}
+/* div{
+    display: block;
+} */
+
+
+.hero-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    color: var(--color-shark);
+    color: #2C2D35;
+    font-family: Raleway;
+    font-style: normal;
+}
+.hero-title span {
+    color: #598d66;
+}
+.hero-description{
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.btn {
+    display: inline-block;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #598d66;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #598d66; /* Изменяем цвет фона при наведении */
+    color: white; /* Также можно изменить цвет текста */
+}
+.btn:active{
+    background-color: #376B44;;
+}
+.btn-stroke{
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* transition: color 0.4s; */
+} 
+/* .btn-stroke:hover{
+color: white;
+} */
+
+.btn-stroke {
+    border: 1px solid currentColor;
+}
+.hero-link {
+    min-width: 150px;
+}
+.hero-content a{
+    margin-top: 50px;
+}
+@media (max-width: 1080px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+  
+    .hero-image {
+      grid-column: span 1;
+      grid-row: 1;
+    }
+  
+    .hero-content {
+      grid-column: span 1;
+      grid-row: 2;
+      padding-top: 20px;
+    }
+  
+    .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Выравнивание по центру по горизонтали */
+      justify-content: center; /* Выравнивание по центру по вертикали */
+      width: 100vh; /* Занимать 100% высоты экрана */
+    }
+  
+    .hero-image, .hero-content {
+      width: 100%;
+    }
+  }
+
+
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
